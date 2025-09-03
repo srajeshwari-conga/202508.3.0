@@ -76,16 +76,15 @@ It provides a two-panel view: available documents on the left and selected docum
 <img src="../res/documentSelector.png" style="max-width: 100%">
 
 <h3>Usage</h3>
-```typescript
-import { DocumentSelectorModule } from '@congarevenuecloud/elements';
 
-<p>@NgModule({
+<div><pre class="line-numbers"><code class="language-typescript">
+import { DocumentSelectorModule } from &#39;&#64;congarevenuecloud/elements&#39;;
+
+&#64;NgModule({
   imports: [DocumentSelectorModule, ...]
 })
-export class AppModule {}</p>
-<div><pre class="line-numbers"><code class="language-none">
-```html
-```html
+export class AppModule {}
+</code></pre></div><div><pre class="line-numbers"><code class="language-html">```html
 &lt;apt-document-selector
   [attachmentList]=&quot;attachments&quot;
   [selectedDocuments]=&quot;selectedDocs&quot;

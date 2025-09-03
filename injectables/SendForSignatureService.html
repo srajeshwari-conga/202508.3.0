@@ -68,32 +68,7 @@
 <p>This service provides methods to interact with the eSignature API for various signature-related operations.
 It supports multiple signature providers like WetSign and CongaSign, and handles user search functionality
 with proper error handling and data transformation.</p>
-<div><pre class="line-numbers"><code class="language-html">```typescript
-// Search for users
-this.sendForSignatureService.searchUsers(&#39;john&#39;).subscribe(users =&gt; {
-  console.log(&#39;Found users:&#39;, users);
-});</code></pre></div><p>// Get configuration
-this.sendForSignatureService.getConfiguration().subscribe(providers =&gt; {
-  console.log(&#39;Available providers:&#39;, providers);
-});</p>
-<p>// Send for signature
-const payload: SendForSignaturePayload = {
-  TemplateId: &#39;&#39;,
-  Status: &#39;Draft&#39;,
-  ObjectId: &#39;quote-123&#39;,
-  ObjectType: &#39;Quote&#39;,
-  // ... other properties
-};
-this.sendForSignatureService.sendForSignature(&#39;CongaSign&#39;, payload).subscribe(result =&gt; {
-  console.log(&#39;Signature request sent:&#39;, result);
-});</p>
-<div><pre class="line-numbers"><code class="language-none">
-See {&#64;link ESignUser} for user search result structure
-See {&#64;link SignProvider} for provider configuration structure
-See {&#64;link SendForSignaturePayload} for signature request payload structure
-See {&#64;link SignatureRecipient} for recipient structure
-See {&#64;link SignatureEmailContent} for email configuration structure
-See {&#64;link UserRole} for user role structure</code></pre></div>
+
             </p>
 
 
