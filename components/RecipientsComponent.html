@@ -88,16 +88,13 @@ The component includes real-time validation, user search capabilities, and flexi
 <img src="../res/recipients.png" style="max-width: 100%">
 
 <h3>Usage</h3>
-```typescript
-import { RecipientsModule } from '@congarevenuecloud/elements';
 
-<p>@NgModule({
+<div><pre class="line-numbers"><code class="language-typescript">import { RecipientsModule } from &#39;&#64;congarevenuecloud/elements&#39;;
+
+&#64;NgModule({
   imports: [RecipientsModule, ...]
 })
-export class AppModule {}</p>
-<div><pre class="line-numbers"><code class="language-none">
-```html
-// Basic usage with recipients array
+export class AppModule {}</code></pre></div><div><pre class="line-numbers"><code class="language-html">// Basic usage
 ```html
 &lt;apt-recipients
   [recipients]=&quot;recipientList&quot;
